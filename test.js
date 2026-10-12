@@ -10,9 +10,9 @@ async function run() {
   const target = "post:50"; // any seeded post id
 
   // Upvote the target 50 times.
-  for (let i = 0; i < 50; i++) {
-    // TODO: await upvote(target);
-  }
+ for (let i = 0; i < 50; i++) {
+  await upvote(target);
+}
 
   // Fetch the top 10 WITH metadata.
   const top = await getTop(10);
